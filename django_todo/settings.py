@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-bnkt(xww@&of+1e$e=8b#t30m^1ud^liiy#t@3e-tx*bhn5mb%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['superbar-django-todo-app.herokuapp.com']
 
 
 # Application definition
