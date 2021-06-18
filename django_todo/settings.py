@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,6 +80,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+
+DATABASES = {
+    'default': dj_database_url.parse('postgres://xxjanmuuxkrrrb:be635f2d2d1e13929d56555e52e1b4f33a8d593f92f1c14b876e8a61bd39e85a@ec2-54-197-100-79.compute-1.amazonaws.com:5432/d69dpalietqath')
 }
 
 
